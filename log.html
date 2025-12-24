@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #c6b6ff, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Form container */
+        .loginform-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Form title */
+        .flogin h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4b2fbe;
+        }
+
+        /* Inputs container */
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Labels */
+        .inputs label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        /* Input fields */
+        .inputs input {
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* Input focus effect */
+        .inputs input:focus {
+            border-color: #4b2fbe;
+            box-shadow: 0 0 5px rgba(75, 47, 190, 0.5);
+        }
+
+        /* Submit button */
+        .inputs button {
+            padding: 12px;
+            background-color: #4b2fbe;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .inputs button:hover {
+            background-color: #6a4de0;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginform-container">
+        <form class="flogin">
+            <h2>LOGIN</h2>
+            <div class="inputs">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname">
+
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="number">Phone Number</label>
+                <input type="tel" id="number" name="number">
+
+                <button type="submit" id="sub-btn">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="log.js"></script>
+</body>
+</html>
