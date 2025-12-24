@@ -31,4 +31,3 @@ Book Learn is a static online bookstore website designed to provide users with a
 - **JavaScript** – for interactive elements like search functionality.
 - **Git & GitHub** – for version control and deployment.
 
-## Project Structure
